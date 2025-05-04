@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórico</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form id="form"">
-        <h1>Armazene uma mensagem</h1>
-        <label for="text">
-            <p>Coloque uma mensagem abaixo.</p>
-        </label>
-        <input type="text" name="text" id="text" required>
-        <input type="submit" value="Enviar">
-        <button id="history">Histórico</button>
-    </form>
-    <div id="historicoList">
-        <h2>Histórico</h2>
-        <select size="6" name="list" id="list"></select>
-        <button id="delete">Deletar</button>
-        <button id="Sair">Sair</button>
-    </div>
+    <main>
+        <section class="message">
+            <p>:)</p>
+            <form id="form"">
+                <h2>Armazene uma mensagem</h2>
+        <label for=" text">
+                <p>Coloque uma mensagem abaixo:</p>
+                </label>
+                <input type="text" name="text" id="text" required>
+                <div class="button">
+                    <input class="but" type="submit" value="Enviar">
+                    <button class="but" id="history">Histórico</button>
+                </div> 
+            </form>
+        </section>
+
+        <section class="history">
+            <p>:)</p>
+            <div id="historicoList">
+                <h2>Histórico</h2>
+                <select size="6" name="list" id="list"></select>
+                <button id="delete">Deletar</button>
+                <button id="Sair">Sair</button>
+            </div>
+        </section>
+
+    </main>
+
     <script src="script.js"></script>
 </body>
+
 </html>
