@@ -38,8 +38,12 @@ form.addEventListener('submit', (e) => {
 })
 
 deleteButton.addEventListener('click', () => {
-    localStorage.removeItem('userHistory')
-    StorageHistoryUser()
+    const confimDelete = confirm('Tem certeze que dejasa deletar o histórico?')
+    if(confimDelete){
+        localStorage.removeItem('userHistory')
+        StorageHistoryUser()
+        window.alert('Histórico removido com sucesso!')
+    }
 })
 
 goOutButton.addEventListener('click', exitButton)
