@@ -9,6 +9,11 @@ function ButtonHistory(){
     ListHistory.style.display = 'block'
 }
 
+function exitButton(){
+    form.style.display = 'block'
+    ListHistory.style.display = 'none'
+}
+
 function StorageHistoryUser(){
     const history = JSON.parse(localStorage.getItem('userHistory')) || []
     const list = document.querySelector('#list')
@@ -32,9 +37,14 @@ form.addEventListener('submit', (e) => {
     console.log(history)
 })
 
-deleteButton.addEventListener('click', ButtonHistory)
+deleteButton.addEventListener('click', () => {
+    localStorage.removeItem('userHistory')
+    StorageHistoryUser()
+})
 
+goOutButton.addEventListener('click', exitButton)
 historyContainer.addEventListener('click', ButtonHistory)
+
 
 document.addEventListener('DOMContentLoaded', () => {
     ListHistory.style.display = 'none'
