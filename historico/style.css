@@ -43,7 +43,7 @@ main{
     margin-left: -10px;
 }
 
-.message form .button .but{
+.but{
     margin-top: 10px;
     margin-left: 10px;
     width: 100%;
@@ -55,12 +55,28 @@ main{
     border-radius: 5px;
 }
 
-.message form .but:hover{
+.but:hover{
     background-color: rgb(85, 12, 153);
 }
 
 .history{
+    
     background-color: #fff;
     padding: 20px;
     box-shadow: 7px 7px 16px #0000004b;
+}
+
+.history h2{
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.history #list{
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.history .but{
+    margin-left: 0px;
 }
