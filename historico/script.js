@@ -38,7 +38,7 @@ form.addEventListener('submit', (e) => {
 })
 
 deleteButton.addEventListener('click', () => {
-    const confimDelete = confirm('Tem certeze que dejasa deletar o histórico?')
+    const confimDelete = confirm('Tem certeza que deseja deletar o histórico?')
     if(confimDelete){
         localStorage.removeItem('userHistory')
         StorageHistoryUser()
